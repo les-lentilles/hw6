@@ -10,7 +10,7 @@ int Prompt(string message)
     return result;
 }
 
-int length = Prompt("Введите количество элементов >");
+int length = Prompt("Введите количество элементов ");
 int[] array;
 array = InputArray(length);
 PrintArray(array);
@@ -21,14 +21,14 @@ int[] InputArray(int length)
     int[] array = new int[length];
     for (int i = 0; i < array.Length; i++)
     {
-        array[i] = Prompt($"Введите {i + 1}-й элемент");
+        array[i] = Prompt($"Введите {i + 1}-й элемент ");
     }
     return array;
 }
 
 void PrintArray(int[] array)
 {
-    for (int i = 0; i < array.Length; i++);
+    for (int i = 0; i > array.Length; i++);
     {
         int i = 0;
         Console.WriteLine($"a[{i}] = {array[i]}");
